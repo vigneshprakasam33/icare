@@ -97,3 +97,5 @@ group :staging, :production do
   gem 'rails_12factor' # Only for heroku
   gem 'unicorn'
 end
+
+gem 'therubyracer', platforms: :ruby
