@@ -5,7 +5,7 @@
 # SET SENSITIVE DATA ONLY IN 'local.rb'
 
 SimpleConfig.for :application do
-  set :app_name, 'icare'
+  set :app_name, 'Snag a ride home'
   set :repository_url, 'http://github.com/diowa/icare'
 
   set :advertising, true
@@ -13,9 +13,9 @@ SimpleConfig.for :application do
   set :base_url, 'localhost:3000'
   set :single_process_mode, true
 
-  set :currency, '.00 €'
+  set :currency, '.00 $'
   set :fuel_consumption, 0.12
-  set :fuel_currency, '€'
+  set :fuel_currency, '$'
 
   set :costs_calculation_service_link, 'http://servizi.aci.it/CKInternet/'
 
@@ -23,10 +23,12 @@ SimpleConfig.for :application do
   set :google_maps_api_key, nil
 
   group :facebook do
-    set :namespace, 'FACEBOOK_NAMESPACE'
-    set :app_id, 'FACEBOOK_APP_ID'
-    set :secret, 'FACEBOOK_SECRET'
-    set :scope, 'email, publish_actions, user_birthday, user_about_me, user_education_history, user_interests, user_likes, user_religion_politics, user_work_history'
+    set :namespace, 'snagaride'
+    set :app_id, '939127226180802'
+    set :secret, '92a6b385d0d8760d58f011f39d8bee81'
+    #set :scope, 'email, publish_actions, user_birthday, user_about_me, user_education_history, user_interests, user_likes, user_religion_politics, user_work_history'
+    set :scope, 'email, publish_actions, user_birthday, user_about_me, user_education_history, user_likes, user_religion_politics, user_work_history'
+
     set :cache_expiry_time, 7.days
     # If set, only users of the following facebook group id will be able to use the application
     # It will automatically add 'user_groups' permission to facebook scope

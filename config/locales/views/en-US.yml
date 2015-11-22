@@ -263,7 +263,7 @@ en-US:
     show:
       contact: "Contact %{user}"
       expenses_to_share: Expenses to share
-      send_reference: Send a reference
+      send_reference: Leave a review
       report_itinerary: "Report this itinerary"
       login_to_contact: "Log in to contact this user"
     header:

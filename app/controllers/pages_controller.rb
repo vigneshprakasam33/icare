@@ -3,7 +3,8 @@ class PagesController < ApplicationController
   skip_before_action :authenticate_user!
 
   def home
-    redirect_to :dashboard if user_signed_in?
+    #redirect_to :dashboard if user_signed_in?
+    redirect_to new_itinerary_path if user_signed_in?
   end
 
   def fbjssdk_channel
@@ -12,4 +13,5 @@ class PagesController < ApplicationController
     response.headers['Expires'] = 1.year.from_now.httpdate
     render layout: false
   end
+
 end
